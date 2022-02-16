@@ -47,7 +47,7 @@ vim-jetpackは、この点をvim-plug風のプログレスバー表示を備え�
 
 # Vim-plugとの互換性が高い
 
-機能を絞れば大抵のソフトウェアは高速化を達成することができます。しかしvim-jetpackは機能を絞ることはせずに、vim-plugと同等のオプションを提供する努力をしています。ほとんどのvim-plugユーザーは`:s/plug/jetpack/g | s/Plug/Pack/g`を実行するだけでvim-jetpackへの移行が完了します。単純な文字列置換だけで高速化されるなら、移行しない手はないですね！
+機能を絞れば大抵のソフトウェアは高速化を達成することができます。しかしvim-jetpackは機能を絞ることはせずに、vim-plugと同等のオプションを提供する努力をしています。ほとんどのvim-plugユーザーは`:s/plug/jetpack/g | s/Plug/Jetpack/g`を実行するだけでvim-jetpackへの移行が完了します。単純な文字列置換だけで高速化されるなら、移行しない手はないですね！
 
 |      name       |        type        | description                                                   |
 | :-------------: | :----------------: | :------------------------------------------------------------ |
@@ -69,13 +69,13 @@ Vimを使う人はこだわりが強い人が多いでしょう。設定ファ�
 
 ```vim
 call jetpack#begin()
-Pack 'junegunn/fzf.vim'
-Pack 'junegunn/fzf', { 'do': {-> fzf#install()} }
-Pack 'neoclide/coc.nvim', { 'branch': 'release' }
-Pack 'neoclide/coc.nvim', { 'branch': 'master', 'do': 'yarn install --frozen-lockfile' }
-Pack 'vlime/vlime', { 'rtp': 'vim' }
-Pack 'dracula/vim', { 'as': 'dracula' }
-Pack 'tpope/vim-fireplace', { 'for': 'clojure' }
+Jetpack 'junegunn/fzf.vim'
+Jetpack 'junegunn/fzf', { 'do': {-> fzf#install()} }
+Jetpack 'neoclide/coc.nvim', { 'branch': 'release' }
+Jetpack 'neoclide/coc.nvim', { 'branch': 'master', 'do': 'yarn install --frozen-lockfile' }
+Jetpack 'vlime/vlime', { 'rtp': 'vim' }
+Jetpack 'dracula/vim', { 'as': 'dracula' }
+Jetpack 'tpope/vim-fireplace', { 'for': 'clojure' }
 call jetpack#end()
 ```
 
