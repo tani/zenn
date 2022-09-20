@@ -147,12 +147,31 @@ vim-plugの素晴しいところはパッケージマネージャ自体が1つ�
 またPlugと同様に1つのファイルで構成されているので，自動でインストールされるようにブートストラップ処理を書くことも可能です．
 
 ```vim
-let data_dir = has('nvim') ? stdpath('data') . '/site' : '~/.vim'
-if empty(glob(data_dir . '/autoload/jetpack.vim'))
-  silent execute '!curl -fLo '.data_dir.'/autoload/jetpack.vim --create-dirs  https://raw.githubusercontent.com/tani/vim-jetpack/master/autoload/jetpack.vim'
-  autocmd VimEnter * JetpackSync | source $MYVIMRC
+"vim
+let s:jetpackfile = expand('<sfile>:p:h') .. '/pack/jetpack/opt/vim-jetpack/plugin/jetpack.vim'
+let s:jetpackurl = "https://raw.githubusercontent.com/tani/vim-jetpack/master/plugin/jetpack.vim"
+if !filereadable(s:jetpackfile)
+  call system(printf('curl -fsSLo %s --create-dirs %s', s:jetpackfile, s:jetpackurl))
+endif
+
+"neovim + vim
+let s:jetpackfile = stdpath('data') .. '/site/pack/jetpack/opt/vim-jetpack/plugin/jetpack.vim'
+let s:jetpackurl = "https://raw.githubusercontent.com/tani/vim-jetpack/master/plugin/jetpack.vim"
+if !filereadable(s:jetpackfile)
+  call system(printf('curl -fsSLo %s --create-dirs %s', s:jetpackfile, s:jetpackurl))
 endif
 ```
+
+```lua
+-- nvim + lua
+local fn = vim.fn
+local jetpackfile = fn.stdpath('data') .. '/site/pack/jetpack/opt/vim-jetpack/plugin/jetpack.vim'
+local jetpackurl = 'https://raw.githubusercontent.com/tani/vim-jetpack/master/plugin/jetpack.vim'
+if fn.filereadable(jetpackfile) == 0 then
+  fn.system('curl -fsSLo ' .. jetpackfile .. ' --create-dirs ' .. jetpackurl)
+end
+```
+
 
 # 設定や操作が簡単
 
