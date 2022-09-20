@@ -66,6 +66,7 @@ Vimを使う人はこだわりが強い人が多いでしょう。設定ファ�
 ## vim-plug style
 
 ```vim
+packadd vim-jetpack
 call jetpack#begin()
 Jetpack 'junegunn/fzf.vim'
 Jetpack 'junegunn/fzf', { 'do': {-> fzf#install()} }
@@ -80,6 +81,8 @@ call jetpack#end()
 ## dein/ minpac style
 
 ```vim
+
+packadd vim-jetpack
 call jetpack#begin()
 call jetpack#add('junegunn/fzf.vim')
 call jetpack#add('junegunn/fzf', { 'do': {-> fzf#install()} })
@@ -94,6 +97,7 @@ call jetpack#end()
 ## packer style
 
 ```lua
+vim.cmd('packadd vim-jetpack')
 require('jetpack').startup(function(use)
   use 'junegunn/fzf.vim'
   use {'junegunn/fzf', do = 'call fzf#install()' }
@@ -108,6 +112,7 @@ end)
 ## paq style
 
 ```lua
+vim.cmd('packadd vim-jetpack')
 require('jetpack').setup {
   'junegunn/fzf.vim',
   {'junegunn/fzf', do = 'call fzf#install()' },
