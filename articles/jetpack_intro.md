@@ -124,17 +124,25 @@ require('jetpack').setup {
 vim-plugの素晴しいところはパッケージマネージャ自体が1つのファイルだけで構成されていることです。これにより、HTTPリクエストが投げれる環境ならどこでもvim-plugを設定することができます。vim-jetpackもこれに倣い1つのファイルに収めています。サイズも小さいためVimの設定ファイルの一つとしてリポジトリに組み込むことも可能です。
 余談ですがVimscriptは古典的な逐次インタプリタ処理をしているのでコードが小さいことで単純に速度向上にもつながっています。
 
-## Vim
+- Linux / macOS (shell)
+  - Vim
+    ```
+    curl -fLo ~/.vim/pack/jetpack/opt/vim-jetpack/plugin/jetpack.vim --create-dirs https://raw.githubusercontent.com/tani/vim-jetpack/master/plugin/jetpack.vim
+    ```
+  - Neovim
+    ```
+    curl -fLo ~/.local/share/nvim/site/pack/jetpack/opt/vim-jetpack/plugin/jetpack.vim --create-dirs https://raw.githubusercontent.com/tani/vim-jetpack/master/plugin/jetpack.vim
+    ```
+- Windows (cmd.exe)
+  - Vim
+    ```
+    curl -fLo %USERPROFILE%\vimfiles\pack\jetpack\opt\vim-jetpack\plugin\jetpack.vim --create-dirs https://raw.githubusercontent.com/tani/vim-jetpack/master/plugin/jetpack.vim
+    ```
+  - Neovim
+    ```
+    curl -fLo %USERPROFILE%\AppData\Local\nvim-data\site\pack\jetpack\opt\vim-jetpack\plugin\jetpack.vim --create-dirs https://raw.githubusercontent.com/tani/vim-jetpack/master/plugin/jetpack.vim
+    ```
 
-```
-curl -fLo ~/.vim/autoload/jetpack.vim --create-dirs https://raw.githubusercontent.com/tani/vim-jetpack/master/autoload/jetpack.vim
-```
-
-## Neovim
-
-```
-curl -fLo ~/.config/nvim/autoload/jetpack.vim --create-dirs https://raw.githubusercontent.com/tani/vim-jetpack/master/autoload/jetpack.vim
-```
 
 またPlugと同様に1つのファイルで構成されているので，自動でインストールされるようにブートストラップ処理を書くことも可能です．
 
@@ -150,10 +158,6 @@ endif
 
 プラグインを使うだけならば、プラグインのインストールと更新は同時に行われても問題無いことが多いです。そこでvim-jetpackでは単一のコマンド`JetpackSync`のみでインストールと更新、最適化までを一括して行うようにしています。ユーザーは設定ファイルを更新した際に `JetpackSync`(あるいは環境によっては `Jetpack` のみ) で最新の状態を維持できます。
 
-またvim-jetpackによる最適化レベルの設定は3つあり`g:jetpack#optimization`で調整することができます。`let g:jetpack#optimization=0`では一切の最適化を無効にします。これはvim-plugを同じ挙動です。`let g:jetpack#optimization=1`では安全な場合のみ最適化を行います。これがvim-jetpackの既定の挙動です。`let g:jetpack#optimization=2`では全てのプラグインで最適化を行います。これはdein.vimの挙動に近いです。
-
-プラグイン同士の干渉を調べるにはそれなりに処理時間が必要になるので、おすすめは`let g:jetpack#optimization=2`を試してみて設定が壊れてしまうようなら最適化レベルを下げることです。
-
 # dein.vimよりも高速なのか
 
 もし、あなたがVimscriptについて造詣が深くvimrcを注意深く設定することができれば、dein.vimは依然として最速です。
@@ -167,5 +171,3 @@ vim-jetpackはカスタマイズできる機能をvim-plug相当まで減らす�
 # まとめ
 
 vim-jetpackは軽量最速のプラグインマネージャです。大体のケースでは移行するだけで起動時間が大幅に短縮されます。vim-plugのファンシーなインターフェースを気に入っているのではない限り移行しない手はないでしょう。**vim-jetpackはあなたのvimを加速させます。**
-
-今後は、vim-plugとの互換性の向上と不正な記述に対するエラー処理を充実させていく予定です。
