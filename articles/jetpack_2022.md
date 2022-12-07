@@ -20,7 +20,6 @@ published: true
 
 vim-jetpackは vim-plugの後継を目標に2022年2月に開発をスタートしました。vim-plugのインターフェースをそのままに2016年に登場した Vim8/Neovimの packages 機能で同様の機能を再現し、高速化することが目的でした。
 
-vim-jetpackは vim-plugの後継を目標に2022年2月に開発をスタートしました。vim-plugのインターフェースをそのままに2016年に登場した Vim8/Neovimの packages 機能で同様の機能を再現し、高速化することが目的でした。
 
 ## 問題意識
 
