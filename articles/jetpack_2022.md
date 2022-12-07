@@ -1,5 +1,5 @@
 ---
-title: "最速のVimプラグインマネージャを作った"
+title: "vim-jetpackでサクサクなvimを目指す"
 emoji: "🚀"
 type: "tech"
 topics: ["vim", "neovim"]
