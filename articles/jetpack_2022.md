@@ -8,7 +8,7 @@ published: true
 
 # vim-jetpack 2022
 
-[vim-jetpack](https://github.com/tani/vim-jetapck) とは 私が今年の2月から開発を初めたVim/ Neovim用のプラグインマネージャです。ありがたいことに登場初期から多くのVimmerに注目していただいため、開発から1年も経っていませんが、沢山の開発者からフィードバックやパッチの貢献を貰い、他のプラグインマネージャに比肩するプラグインマネージャにまで成長しました。本記事では、vim-jetpackの初期からの変更差分と今後について書きます。
+[vim-jetpack](https://github.com/tani/vim-jetpack) とは 私が今年の2月から開発を初めたVim/ Neovim用のプラグインマネージャです。ありがたいことに登場初期から多くのVimmerに注目していただいため、開発から1年も経っていませんが、沢山の開発者からフィードバックやパッチの貢献を貰い、他のプラグインマネージャに比肩するプラグインマネージャにまで成長しました。本記事では、vim-jetpackの初期からの変更差分と今後について書きます。
 
 ![](/images/star_history_jetpack_2022.png)
 
