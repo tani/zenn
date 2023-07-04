@@ -3,7 +3,7 @@ title: "タイポ修正を支える技術"
 emoji: "✍️"
 type: "tech"
 topics: ["vim", "neovim"]
-published: false
+published: true
 ---
 
 # はしがき
@@ -25,6 +25,9 @@ Vimのプラグインを作りました。設定は要りません。
 ```
 Jetpack 'tani/vim-typo'
 ```
+
+https://github.com/tani/vim-typo
+
 
 # タイポとは
 
@@ -71,6 +74,10 @@ abbreviate functon function
 正しい単語 $w$ に対して $\operatorname{Typo}(w, n)$ を一括で短縮入力に登録します。
 
 これによってタイポとされる単語が入力されると、自動で正しい単語に修正されるようになります。
+
+## 関連：
+
+この短縮機能を用いたタイポ修正は https://zenn.dev/monaqa/articles/2020-12-22-vim-abbrev を参考にさせていただきました。
 
 # 構文ファイルからキーワード抽出
 
