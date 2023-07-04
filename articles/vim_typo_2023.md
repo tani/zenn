@@ -50,8 +50,8 @@ https://github.com/tani/vim-typo
 ある単語 $w$に対してタイポ距離が$n$のタイポの集合は、文字列操作で帰納的に構成することができます。
 
 $$\mathrm{Typo}(w, n) = \begin{cases} 
-\\{w\\} & (n = 0)\\
-\\{w\\}\cup \mathrm{Typo}(\mathrm{del}(w), n - 1) \cup \mathrm{Typo}(\mathrm{swp}(w), n - 1) & (n > 0)
+\{w\} & (n = 0)\\
+\{w\}\cup \mathrm{Typo}(\mathrm{del}(w), n - 1) \cup \mathrm{Typo}(\mathrm{swp}(w), n - 1) & (n > 0)
 \end{cases}$$
 
 # 短縮入力 (abbreviation)
