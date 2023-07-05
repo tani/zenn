@@ -6,7 +6,7 @@ topics: ["vim", "neovim"]
 published: true
 ---
 
-本記事は[Vim駅伝](https://vim-jp.org/ekiden)7月5日目の記事として投稿しています。
+本記事は[Vim駅伝](https://vim-jp.org/ekiden)7月5日の記事として投稿しています。
 
 # はしがき
 
