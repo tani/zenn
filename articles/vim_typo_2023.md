@@ -49,7 +49,7 @@ https://github.com/tani/vim-typo
 
 たとえば、`function` と `funciton` の間の編集距離は2ですが、タイポ距離は1です。
 
-ある単語 $w$に対してタイポ距離が$n$のタイポの集合は、文字列操作で帰納的に構成することができます。
+ある単語 $w$に対してタイポ距離が$n$以下のタイポの集合は、文字列操作で帰納的に構成することができます。
 
 $$\mathrm{Typo}(w, n) = \begin{cases} 
 \{w\} & (n = 0)\\
@@ -76,7 +76,7 @@ abbreviate functon function
 
 これによってタイポとされる単語が入力されると、自動で正しい単語に修正されるようになります。
 
-## 関連：
+## 関連
 
 この短縮機能を用いたタイポ修正は https://zenn.dev/monaqa/articles/2020-12-22-vim-abbrev を参考にさせていただきました。
 
