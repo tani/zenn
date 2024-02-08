@@ -3,7 +3,7 @@ title: "SKKで簡体字を入力する"
 emoji: "📝"
 type: "tech"
 topics: ["vim", "neovim", "skk", "chinese", "emacs", "macOS", "windows", "linux"]
-published: false
+published: true
 ---
 
 # SKKで簡体字を入力する。

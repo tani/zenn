@@ -3,7 +3,7 @@ title: "Artemis: Bridging the gap between Vim and Neovim"
 emoji: "🌔"
 type: "tech"
 topics: ["vim", "neovim"]
-published: false
+published: true
 ---
 
 # Artemis: Bridging the gap between Vim and Neovim

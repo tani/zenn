@@ -3,7 +3,7 @@ title: "Quickfix is all you need"
 emoji: "🚀"
 type: "tech"
 topics: ["vim", "neovim"]
-published: false
+published: true
 ---
 
 # Quickfix is all you need
