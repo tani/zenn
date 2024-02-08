@@ -1,4 +1,4 @@
-~~~~---
+---
 title: "SKKで簡体字を入力する"
 emoji: "📝"
 type: "tech"
