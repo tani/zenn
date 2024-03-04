@@ -9,7 +9,7 @@ published: true
 # TS Match
 
 あたらしいパターンマッチライブラリを作りました。
-unknownutilsなどのtypeguardと組み合わせることで、構造化束縛も同時に出来るようになります。
+[unknownutil](https://github.com/lambdalisue/deno-unknownutil)などのtypeguardと組み合わせることで、構造化束縛も同時に出来るようになります。
 型パズルが裏で動いているので Honoのルータみたいに束縛したところも型情報が残ります。
 ほぼREADMEの和訳で恐縮ですがよろしくおねがいします。
 
@@ -21,7 +21,7 @@ ECMAScript には構造化束縛があります。これは、複雑な構造か
 const { a } = value // value === nullのとき例外が出力される
 ```
 
-そのため、構造化束縛を行うためには、TypeScriptがコンパイル時に構造が一致することを保証するか、zodやunknownutilsなどのバリデーションライブラリが実行時に構造が一致することを確認します。前者は、JSONデータのように、コンパイル時に構造が決まっていないデータには無力です。後者は、構造化束縛パターンと検証パターンを2つずつ書く必要があります。
+そのため、構造化束縛を行うためには、TypeScriptがコンパイル時に構造が一致することを保証するか、zodやunknownutilなどのバリデーションライブラリが実行時に構造が一致することを確認します。前者は、JSONデータのように、コンパイル時に構造が決まっていないデータには無力です。後者は、構造化束縛パターンと検証パターンを2つずつ書く必要があります。
 
 このライブラリは、コンパイル時の型情報を保持しながら、構造化束縛とバリデーションを同時に行うことができ、EcmaScriptの構造化束縛を完成させ、真のパターンマッチングを可能にするライブラリです。
 
@@ -71,7 +71,7 @@ import { placeholder as $, match } from 'jsr:@core/match';
 
 ## 型ガードの宣言方法
 
-TypeScriptでは、型ガードは`(v: unknown) => v is T`型の関数であり、以下のように宣言できます。unknownutilsのようなジェネリック型ガードのコレクションもあります。
+TypeScriptでは、型ガードは`(v: unknown) => v is T`型の関数であり、以下のように宣言できます。unknownutilのようなジェネリック型ガードのコレクションもあります。
 
 ```ts
 function isNumber(v: unknown): v is number {
