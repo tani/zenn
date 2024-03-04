@@ -58,6 +58,7 @@ import { placeholder as $, match } from 'jsr:@core/match';
   - 構造が一致しない場合や型ガードが失敗した場合、`undefined`が返されます。
 
   ```ts
+
   type Result = {
     [1]: unknown,
     [Symbol.other]: unknown
@@ -66,7 +67,9 @@ import { placeholder as $, match } from 'jsr:@core/match';
     age: number,
     favorite: unknown
   } | undefined;
-  const result: Result = match(pattern, value);
+
+  const response = await fetch("https://example.com/sample.json");
+  const result: Result = match(pattern, await response.json());
   ```
 
 ## 型ガードの宣言方法
