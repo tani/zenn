@@ -3,7 +3,7 @@ title: "TypeScriptフレンドリーで安全な構造化束縛ができるパ�
 emoji: "🚀"
 type: "tech"
 topics: ["javascript", "typescript"]
-published: false
+published: true
 ---
 
 # TS Match
