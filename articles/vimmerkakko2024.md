@@ -30,9 +30,9 @@ inoremap [ []<Left>
 
 ## 括弧の挿入と削除 2
 
-- parinfer-rust
-- vim-parinfer
-- nvim-parinfer
+- https://github.com/eraserhd/parinfer-rust
+- https://github.com/bhurlow/vim-parinfer
+- https://github.com/gpanders/nvim-parinfer
 
 前節では括弧を自動で入力することを紹介しましたが、
 もっと詳しく編集操作を分析すると、括弧には興味深い性質があることがわかります。
@@ -88,9 +88,9 @@ vimの場合は以下のものがあります。
 parinfer は LISP 系のプログラミング言語を念頭に設計されています。
 そこで、もうすこし緩い括弧の編集方法を紹介します。
 
-- vim-sandwitch
-- mini.surround
-- surround.vim
+- https://github.com/machakann/vim-sandwich
+- https://github.com/echasnovski/mini.surround
+- https://github.com/tpope/vim-surround
 
 これらは、括弧 **自体** を 文字よりも抽象度の高く、
 vim で扱う編集単位の一つとして扱えるようにしてくれます。
@@ -150,6 +150,9 @@ int main { // 括弧ごと消える!
 
 ところで、括弧を用いた範囲選択は便利ですが、LaTeXのように括弧のパターンが特殊なものがあります。
 そういったものも、同様に扱えるようにするのが、`mini.ai` や `vim-textobj-user` です。
+
+- https://github.com/echasnovski/mini.ai
+- https://github.com/kana/vim-textobj-user
 
 ここでは、`mini.ai` 例に説明します。以下のコードはLaTeXで数式を挿入するときに使われる括弧 `\\(` と `\\)` や
 `\\[` と `\\]`範囲選択できるようにします。
@@ -211,15 +214,21 @@ HTMLでは、 `<div>` に対応するものは `</div>` です。
 これを実現するが、 `vim-matchup` です。
 `vim-matchup` は既存の `%` を拡張してどの言語でも対応する括弧に移動できるようにしてくれます。
 
+- https://github.com/andymass/vim-matchup
+
 ## さらに複雑な括弧へ
 
 典型的な括弧の操作について紹介してきました。ここで括弧の概念をさらに拡張しましょう。
 たとえば、`\\begin{document}` と入力されたら、 `\\end{document}` と入力して欲しいですね？
 `<div>` なら `</div>` と入力して欲しいですね。
 
-このように一文字とは限らない複雑な括弧の対応を取るためのフレームワークが nvim-insx や lexima.vimです。
+このように一文字とは限らない複雑な括弧の対応を取るためのフレームワークが `nvim-insx` や `lexima.vim`  です。
 強力な Vimの正規表現を使用しているため、バックスラッシュが多く煩雑なコードになっていて恐縮ですが、
 以下のコードは HTML と LaTeXで前述のような閉じ括弧を自動補完するためのコードです。
+
+- https://github.com/hrsh7th/nvim-insx
+- https://github.com/cohama/lexima.vim
+- https://github.com/windwp/nvim-autopairs
 
 ```lua
 vim.fn["lexima#add_rule"]({
