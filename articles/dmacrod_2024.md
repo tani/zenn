@@ -3,7 +3,8 @@ title: "自動補完の未来: 操作の補完 dmacro への招待"
 emoji: "😎"
 type: "tech"
 topics: ["emacs", "vim", "neovim", "vscode"]
-published: false
+published: true
+published_at: 2024-05-08 00:00
 ---
 
 ## 次に来る自動補完
@@ -133,3 +134,7 @@ https://github.com/emacs-jp/dmacro
 
 https://github.com/tshino/vscode-dynamic-macro
 
+:::message
+本記事はVim 駅伝の記事の一つとして執筆されました。
+https://vim-jp.org/ekiden/
+:::
