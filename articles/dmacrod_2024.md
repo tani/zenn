@@ -62,8 +62,11 @@ published: false
 dmacro は以下のような補完を行うことができます。
 
 - 現在の行の各単語を `""` で囲む
+  ![](images/wrap_quote_dmacro_2024.png)
 - 2行おきに行頭の `数字` を `数字+1` に置換する
+  ![](images/inc_num_dmacro_2024.png)
 - 2行おきに空行を挿入する
+  ![](images/insert_nl_dmacro_2024.png)
 
 ## dmacro の仕組み: 操作の補完の裏側
 
