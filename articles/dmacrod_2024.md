@@ -37,9 +37,11 @@ published: false
 
 この記事で紹介する操作の補完機能は既にメジャーなテキストエディタに実装されています。とくに、Emacsでの実装は歴史が古く2000年代から存在していました。この記事の作者は、そのEmacsの拡張機能を2024年にNeovim 0.10.0を対象に移植しました。
 
-- https://github.com/tani/dmacro.nvim (著者が実装しています)
-- https://github.com/emacs-jp/dmacro
-- https://github.com/tshino/vscode-dynamic-macro
+https://github.com/tani/dmacro.nvim
+
+https://github.com/emacs-jp/dmacro
+
+https://github.com/tshino/vscode-dynamic-macro
 
 ## dmacroにできること
 
@@ -125,7 +127,9 @@ dmacroによる操作の補完の予測アルゴリズムは2つあります。1
 
 テキストエディタに詳しい諸氏からは、dmacroが2002年に既にEmacsで実装されていることから、過去の技術ではないか？と指摘がありそうです。言い訳になりますが、それはEmacsのオーパーツ級の拡張性と増井先生の先見の明があってたまたま実現しただけであって、人類にとってはまだ未来の技術だろうと思い、不誠実ながらこのタイトルをつけました。実は、未来の技術ではなくて過去の偉業を再発明しただけでした。
 
-- https://github.com/tani/dmacro.nvim (著者が実装しています)
-- https://github.com/emacs-jp/dmacro
-- https://github.com/tshino/vscode-dynamic-macro
+https://github.com/tani/dmacro.nvim
+
+https://github.com/emacs-jp/dmacro
+
+https://github.com/tshino/vscode-dynamic-macro
 
