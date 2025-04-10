@@ -2,7 +2,7 @@
 title: "MD Slides: お手軽スライド共有アプリ"
 emoji: "📝"
 type: "tech"
-topics: ["deno", "markdown"]
+topics: ["deno", "markdown", "marp"]
 published: true
 ---
 
