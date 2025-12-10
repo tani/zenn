@@ -14,6 +14,9 @@ Firenvim とは、Firefox や Chrome のテキストボックスの上に Neovim
 
 今回は、このツールを使って「Vim as an IME」を実現する現代的な意義について語ります。
 
+![](https://raw.githubusercontent.com/glacambre/firenvim/refs/heads/master/firenvim.gif)
+(引用: Firenvim GitHub REAMD)
+
 ## IME をインストールしないという選択肢
 
 Linux ユーザーにとって、日本語 IME は長年の鬼門の一つです。
